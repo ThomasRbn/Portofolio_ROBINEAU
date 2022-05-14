@@ -1,5 +1,5 @@
-S1.01 : Contient les fichiers de la SAE S1.01 Implémentation d'un besoin client, librement accessible.
-NB : Un compilateur Java est requis pour lancer l'application.
+S1.01 : Contient les fichiers de la SAE S1.01 Implémentation d'un besoin client, librement accessible. <br>
+NB : Un compilateur Java est requis pour lancer l'application. <br>
 Lancement via :
 ```Java
 javac *.java
