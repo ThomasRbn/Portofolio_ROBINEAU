@@ -1,4 +1,4 @@
-S2.02 : Contient les fichiers de la SAE S1.02 Comparaison d'approches algorithmiques <br>
+S1.02 : Contient les fichiers de la SAE S1.02 Comparaison d'approches algorithmiques <br>
 NB : Un compilateur Java est requis pour lancer l'application. <br>
 Lancements : <br>
 ```java
