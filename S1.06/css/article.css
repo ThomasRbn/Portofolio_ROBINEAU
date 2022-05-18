@@ -1,0 +1,229 @@
+:root{
+    font-size : 14px;
+    --principale-couleur : #fbe8a6;
+    --seconde-couleur:#f4976c;
+    --troisieme-couleur:#e5f6f7;
+    --quatrieme-couleur:#b4dfe5;
+    --cinquieme-couleur:#303C6C;
+}
+*{
+    font-family: Arial, Verdana, Helvetica;
+    box-sizing: border-box;
+    color:var(--cinquieme-couleur);
+    
+}
+body{
+    margin : 5px;
+    background-color: var(--principale-couleur);
+}
+
+a.title{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    background-color: transparent;
+    
+    font-size: 10rem;
+    
+    border:solid 0.05em var(--cinquieme-couleur);
+    border-radius: 0.3em 0.3em;
+    box-shadow: -5px -5px 4px var(--troisieme-couleur);
+    color:var(--cinquieme-couleur);            
+    width:4em;
+    margin:0.3em auto;
+    display:block;
+}
+
+
+
+header{
+    width : 100%;
+    margin-bottom: 2em;
+    position: sticky;
+    top : 0; 
+}
+footer{
+    font-size : 1.6rem;
+}
+.menu {
+    
+    height: 50px;
+    font-size : 2rem;
+    margin: 2em;
+    z-index: 99;
+    position:left;
+    background-color: transparent;
+    display:flex;
+}
+
+div.Rb{
+    flex-grow: 1;
+}
+
+.menu .Rb{
+    
+    text-align: center;
+    font: normal bold 1em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 2px;
+    background-color: transparent;
+    
+}
+
+a{
+    color:var(--cinquieme-couleur);
+    text-decoration: none;
+}
+
+.Article  > a{
+    padding: 18px 0;
+    border-bottom:solid 2px var(--cinquieme-couleur);
+    border-left: solid 2px var(--cinquieme-couleur);
+    border-right: solid 2px var(--cinquieme-couleur);
+    margin-top: 0px;
+    
+    display:block;
+}
+
+div.Rb>a.rb{
+    padding: 18px 0;
+    border:solid 3px var(--cinquieme-couleur);
+    display:block;
+    
+    background-color:var(--seconde-couleur);
+                
+}
+
+div.Rb .Article {
+    display: none;
+    
+}
+
+div.Article a {
+    background-color: var(--seconde-couleur);
+}
+
+div.menu div.Rb a:hover{
+    background-color: var(--quatrieme-couleur);
+    
+}
+
+div.menu div.Rb:hover div.Article{
+    display:block;
+}
+section{
+    display:flex;
+    font-size : 1.8rem;
+    align-items: stretch;
+    
+    margin:5em 2.5em 2.5em 2.5em;
+}
+
+section > div.pub{
+    display:flex;
+    flex-direction: column;
+    margin-left: 2em;
+}
+
+section.contenu> div.pub > div >img{
+    width:5em;
+    height:7.5em;
+    display: block;
+    margin : 2em;
+    margin-top: 3em;
+    
+}
+
+div.pub > div > p{
+    text-align: center;
+
+    font-size: 1em;
+}
+
+
+section.contenu > div.article {
+    display: block;
+    border :solid 3px var(--cinquieme-couleur);
+    border-radius: 1em 1em;
+    margin-left:76px;
+    margin-right:1em;
+    background-color: var(--troisieme-couleur);
+}
+
+
+section.contenu > div.article > h2 {
+    font-size : 5rem;
+    text-align:center;
+}
+
+
+section.contenu > div.article > h4 {
+    font-size : 3.5rem;
+    margin:1em;
+    padding:1em;
+}
+div.title > h2{
+    display: block;
+}
+
+
+section.contenu > div.article  > img{
+    width:40vw;
+    height:30vw;
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+
+section.contenu > div.article > p {
+    font-size : 1.5em;
+    display:block;
+    margin:3em;
+     
+}
+
+
+
+
+footer  > a.a_propos{
+    font-size: 18px;
+    border : solid 3px var(--cinquieme-couleur);
+    
+    text-align: center;
+    background-color: var(--seconde-couleur);
+    margin-top:1em;
+    padding: 1em;
+    bottom:0;
+    display: block;
+    
+}
+footer > a.a_propos:hover {
+    background-color: var(--quatrieme-couleur);
+    text-align : center;
+}
+
+@media screen and (min-width : 800px){
+    :root{
+        font-size : 10px;
+    }
+    div.Rb{
+        display : inline-block;
+        width : 100%;
+    }
+    div.contenu{
+        width : 780px;
+        margin : auto;
+    }
+}
+@media screen and (min-width : 1200px){
+    :root{
+        font-size : 8px;
+    }
+    div.contenu{
+        width : 1180px;
+    }
+    div.contenu,section{
+        min-width : 25%;
+    }
+
+}

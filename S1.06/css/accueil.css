@@ -1,0 +1,254 @@
+:root{
+    font-size :14px;
+    --principale-couleur : #fbe8a6;
+    --seconde-couleur:#f4976c;
+    --troisieme-couleur:#e5f6f7;
+    --quatrieme-couleur:#b4dfe5;
+    --cinquieme-couleur:#303C6C;
+}
+
+*{
+    font-family: Arial, Verdana, Helvetica;
+    box-sizing: border-box;
+    color:var(--cinquieme-couleur);
+    
+}
+body{
+    margin : 5px;
+    background-color: var(--principale-couleur);
+}
+
+
+a.title{
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    background-color: transparent;
+    
+    font-size: 10rem;
+    
+    border:solid 0.05em var(--cinquieme-couleur);
+    border-radius: 0.3em 0.3em;
+    box-shadow: -5px -5px 4px var(--troisieme-couleur);
+    color:var(--cinquieme-couleur);            
+    width:4em;
+    margin:0.3em auto;
+    display:block;
+}
+
+
+
+header{
+    width : 100%;
+    margin-bottom: 2em;
+    position: sticky;
+    top : 0; 
+}
+footer{
+    font-size : 1.6rem;
+    width : 100%;
+}
+.menu {
+   
+    height: 50px;
+    font-size : 2rem;
+    margin: 2em;
+    z-index: 99;
+    position:left;
+    background-color: transparent;
+    display:flex;
+}
+
+div.Rb{
+    flex-grow: 1;
+}
+
+.menu .Rb{
+    
+    text-align: center;
+    font: normal bold 1em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 2px;
+    background-color: transparent;
+    
+}
+
+a{
+    color:var(--cinquieme-couleur);
+    text-decoration: none;
+}
+
+.Article  > a{
+    padding: 18px 0;
+    border-bottom:solid 2px var(--cinquieme-couleur);
+    border-left: solid 2px var(--cinquieme-couleur);
+    border-right: solid 2px var(--cinquieme-couleur);
+    margin-top: 0px;
+    
+    display:block;
+}
+
+div.Rb>a.rb{
+    padding: 18px 0;
+    border:solid 3px var(--cinquieme-couleur);
+    display:block;
+    
+    background-color:var(--seconde-couleur);
+                
+}
+
+div.Rb .Article {
+    display: none;
+    
+}
+
+div.Article a {
+    background-color: var(--seconde-couleur);
+}
+
+div.menu div.Rb a:hover{
+    background-color: var(--quatrieme-couleur);
+    
+}
+
+div.menu div.Rb:hover div.Article{
+    display:block;
+}
+
+section{
+    display:flex;
+    font-size : 1.8rem;
+    align-items: stretch;
+}
+
+section > div.pub{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+section> div.pub > div >img{
+    width:5em;
+    height:7.5em;
+    display: block;
+    margin : 2em;
+    margin-top: 3em;
+    
+}
+
+div.pub > div > p{
+    text-align: center;
+    
+    font-size: 1em;
+}
+
+div.contenu{
+    padding : 8px 8px 0px 8px;
+    display:flex;
+    flex-grow:2;
+    margin-left:1em;
+    flex-direction: column;
+    align-items:stretch;
+    
+}
+
+div.contenu > div.pre-texte {
+    border : solid 3px var(--cinquieme-couleur);
+    background-color: var(--troisieme-couleur);
+    border-radius: 1em 1em;
+    margin:1em;
+    padding:1em;
+    flex-grow: 1;
+}
+
+div.contenu > div.pre-texte > h3.titre{
+    text-align: center;
+}
+
+div.contenu > div.texte{
+    border:solid 3px var(--cinquieme-couleur);
+    border-radius:1em 1em;
+    margin:1em 1em 0px 1em;
+    padding:1em;
+    flex-grow: 2;
+    background-color: var(--troisieme-couleur);
+    
+}
+
+div.contenu > div.texte div{
+    margin:1em;
+    columns:3;
+}
+
+div.texte > div> img.train{
+    border-radius: 0.5em 0.5em;
+    border:solid 1px transparent;
+}
+
+div.texte  img{
+    width:20vw;
+    height:16vw;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;  
+}
+
+footer  > a.a_propos{
+    font-size: 18px;
+    border : solid 3px var(--cinquieme-couleur);
+    
+    text-align: center;
+    background-color: var(--seconde-couleur);
+    margin-top:1em;
+    padding: 1em;
+    bottom:0;
+    display: block;
+    
+}
+footer > a.a_propos:hover {
+    background-color: var(--quatrieme-couleur);
+    text-align : center;
+}
+
+@media screen and (min-width : 600px){
+    
+    div.Rb{
+        display : inline-block;
+    }
+    div.contenu{
+        display : flex;
+        flex-wrap : wrap;
+    }
+    div.contenu,section{
+        flex : 1;
+        min-width : 45%;
+        margin : 10px;
+        padding : 10px;
+    }
+}
+
+@media screen and (min-width : 800px){
+    :root{
+        font-size : 10px;
+    }
+    div.Rb{
+        display : inline-block;
+        width : 100%;
+    }
+    div.contenu{
+        width : 780px;
+        margin : auto;
+    }
+}
+@media screen and (min-width : 1200px){
+    :root{
+        font-size : 8px;
+    }
+    div.contenu{
+        width : 1180px;
+    }
+    div.contenu,section{
+        min-width : 25%;
+    }
+
+}
